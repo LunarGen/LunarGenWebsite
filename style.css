@@ -70,19 +70,20 @@
   
   .hero {
     background-color: #f8f8f8;
-    padding: 80px 20px;
+    padding: 100px 30px;
     text-align: center;
-    animation: fadeInUp 1s ease-in-out;
+    animation: fadeInUp 1.7s ease-in-out;
   }
   
   .hero h1 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 40px;
+    font-size: 45px;
   }
   
   .hero p {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #666;
+    font-size: 20px;
   }
   
   .button {
@@ -100,7 +101,6 @@
   
   .services {
     
-
     padding: 80px 20px;
     text-align: center;
     animation: fadeInUp 1s ease-in-out;
@@ -128,16 +128,19 @@
   .service img {
     width: 200px;
     height: 200px;
-    display: flex;
+    display: center;
     object-fit: cover;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
+
   
   .service p {
     color: #666;
-    text-align: left;
+    text-align: center;
     flex: 1;
     font-size: 1.1rem;
+    margin-left: 70px;
+    margin-right: 70px;
   }
   .testimonials {
     background-color: #f8f8f8;
@@ -179,6 +182,7 @@
       opacity: 0;
       transform: translateY(50px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -200,7 +204,8 @@
     padding: 2rem 0;
     background-color: #f7f7f7;
   }
-  
+
+
   
 
   

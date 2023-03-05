@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script >
+    function funct(){
+      navigator.clipboard.writeText("LunarGen@lunargen.com");
+
+  // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+    }
 
     window.addEventListener('scroll', function() {
       var element = document.querySelector('.fade-in-out');
@@ -54,7 +60,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Clients</a></li>
+          <li><a href="#">Services</a></li>
           
           <li><a href="#">Contact</a></li>
         </ul>
@@ -62,42 +68,13 @@
     </header>
     <main>
       <section class="hero fade-in-out">
-        <h1>Software solutions for your business.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
+        <br><br><br>
+        <h1>Transform your business with LunarGen</h1>
+        <p>At LunarGen we are driven to streamline your workflow and enhance customer satisfaction. Our team of developers will collaborate closely with clients to deliver tailored solutions, giving you a distinct competitive edge in your industry.</p>
+        <br><br><br>
       </section>
       <section class="services">
         
-        <div class="service">
-          <h3>API Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="service">
-          <h3>Custom Business Solutions</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="service">
-          <h3>Data Storage and Processing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </section>
-      <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-          <blockquote>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </blockquote>
-          <cite>- John Doe</cite>
-        </div>
-        <div class="testimonial">
-          <blockquote>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          </blockquote>
-          <cite>- Jane Doe</cite>
-        </div>
-      </section>
-      <section class="services">
-        <h2>About Us</h2>
         <div class="about-content">
           <div class="service">
             <h3>Our Mission</h3>
@@ -106,10 +83,66 @@
           <div class="service">
             <h3>Our Team</h3>
             <p>Our team consists of experienced professionals from diverse backgrounds, including software engineering, design, and business development. We are passionate about creating products that make a positive impact on society.</p>
+            
+          </div>
+          <img src="diversity.jpg" height="80px" width="300px">
+          <br><br>
+         
+          <div class="service">
+            <h3>Why LunarGen?</h3>
+            <p>At LunarGen, we understand that our business relationships are the foundation of our success. Our team of developers is driven by a commitment to building strong relationships with our clients and delivering exceptional results that exceed their expectations. We believe that by working collaboratively with our clients, we can gain a deeper understanding of their unique needs and challenges, and develop solutions that are tailored to their specific requirements.</p>
           </div>
           <img src="LunarGen.jpg" alt="Startup image">
         </div>
       </section>
+      <section class="testimonials">
+        <h2>Contact Us</h2>
+        <div class="testimonial">
+          <blockquote>
+            Contact our team for a initial consultation below:
+          </blockquote>
+         
+          <a href="email.html" target=”_blank”>LunarGen@lunargen.com</a>
+          <br><br>
+          <a href="http://linkedin.com"><img src="linkedin.png" height="50px" width="100px"></a>
+        </div>
+        <div class="testimonial">
+          
+        </div>
+      </section>
+      
+      <section class="services">
+        
+        <div class="service">
+          <h3>API Development</h3>
+          <p>Our custom API development service creates APIs that integrate with your website or application, allowing you to communicate with other software systems and access data in real-time. Our expert developers will work with you to create a custom API that meets all of your requirements.</p>
+          <br>
+          <p>Requirements are screened for feasiblitiy and cost. More information available upon request.</p>
+          <br><br>
+          <img src="api.svg">
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="service">
+          <h3>Business Automation Auditing</h3>
+          <p>At LunarGen we can build custom automation tools for your business by conducting an internal review of your technology stack. This involves analyzing your current software and hardware systems to identify areas where automation can improve efficiency, productivity, and accuracy. Based on this review, we can develop custom automation tools that integrate with your existing systems and automate repetitive tasks, freeing up your employees to focus on more strategic work.
+            <br><br>
+            Our expert team of developers can create automation tools for a range of tasks, including data entry, data analysis, report generation, and more. We will work closely with you to understand your unique needs and develop custom solutions that meet your specific requirements. By automating time-consuming tasks, you can increase your output, reduce errors, and improve your bottom line.</p>
+            <br><br>
+            <img src="automation.png">
+          </div>
+          </section>
+          <section class="services">
+        <div class="service">
+          <h3>Cloud Data Storage Solutions</h3>
+          <p>Our industry-leading data migration service can seamlessly move your data to Azure's cutting-edge cloud storage technology. Our expert team will assess your current data storage systems, develop a comprehensive migration plan, and provide ongoing support to ensure your data is always available and easily accessible. By leveraging Azure's advanced cloud storage, you can benefit from increased scalability, flexibility, and security, helping your business achieve its goals and stay ahead of the competition.</p><br>
+          <img src="cloud-storage.svg">
+        </div>
+        
+      </section>
+     
+      
+      
       
       
     <footer>
