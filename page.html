@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="small-logo.JPG" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script >
+
+    window.addEventListener('scroll', function() {
+      var element = document.querySelector('.fade-in-out');
+      var position = element.getBoundingClientRect();
+    
+      // If the element is in the viewport, fade it in
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        element.style.opacity = 1;
+      }
+    
+      // If the element is not in the viewport, fade it out
+      else {
+        element.style.opacity = 0;
+      }
+    });
+
+        window.addEventListener('scroll', function() {
+      var element = document.querySelector('.slide-in-out');
+      var position = element.getBoundingClientRect();
+
+      // If the element is in the viewport, slide and fade it in
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        element.style.opacity = 1;
+        element.style.transform = 'translateX(0)';
+      }
+
+      // If the element is not in the viewport, slide and fade it out
+      else {
+        element.style.opacity = 0;
+        element.style.transform = 'translateX(-50%)';
+      }
+    });
+
+    
+    </script>
+    <title>LunarGen</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="LunarGen.JPG" alt="LunarGen logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Clients</a></li>
+          
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero fade-in-out">
+        <h1>Software solutions for your business.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+      </section>
+      <section class="services">
+        
+        <div class="service">
+          <h3>API Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="service">
+          <h3>Custom Business Solutions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="service">
+          <h3>Data Storage and Processing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </blockquote>
+          <cite>- John Doe</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </blockquote>
+          <cite>- Jane Doe</cite>
+        </div>
+      </section>
+      <section class="services">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="service">
+            <h3>Our Mission</h3>
+            <p>We are a technology startup company focused on creating innovative solutions to everyday problems. Our mission is to improve people's lives through technology by providing easy-to-use and accessible products.</p>
+          </div>
+          <div class="service">
+            <h3>Our Team</h3>
+            <p>Our team consists of experienced professionals from diverse backgrounds, including software engineering, design, and business development. We are passionate about creating products that make a positive impact on society.</p>
+          </div>
+          <img src="LunarGen.jpg" alt="Startup image">
+        </div>
+      </section>
+      
+      
+    <footer>
+      <p>&copy; 2023 LunarGen. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
