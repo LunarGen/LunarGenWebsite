@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script >
+
+
+      window.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        var logo = document.querySelector('.logo');
+        var scrollPosition = window.scrollY;
+        if (scrollPosition > 0) {
+          console.log("activated");
+          logo.classList.add("logo_shrink");
+          logo.setAttribute('src',"white-logo.png");
+          header.classList.add('header__shrink');
+        } else {
+          header.classList.remove('header__shrink');
+          logo.classList.remove("logo_shrink");
+          logo.setAttribute("src","LunarGen.png");
+        }
+      });
+
+
+
+
     function funct(){
       navigator.clipboard.writeText("LunarGen@lunargen.com");
 
@@ -16,34 +37,21 @@
 
     window.addEventListener('scroll', function() {
       var element = document.querySelector('.fade-in-out');
-      var position = element.getBoundingClientRect();
+      
     
       // If the element is in the viewport, fade it in
-      if (position.top < window.innerHeight && position.bottom >= 0) {
-        element.style.opacity = 1;
-      }
-    
-      // If the element is not in the viewport, fade it out
-      else {
-        element.style.opacity = 0;
-      }
+      
     });
 
         window.addEventListener('scroll', function() {
-      var element = document.querySelector('.slide-in-out');
-      var position = element.getBoundingClientRect();
+        var element = document.querySelector('.slide-in-out');
+      
 
       // If the element is in the viewport, slide and fade it in
-      if (position.top < window.innerHeight && position.bottom >= 0) {
-        element.style.opacity = 1;
-        element.style.transform = 'translateX(0)';
-      }
+      
 
       // If the element is not in the viewport, slide and fade it out
-      else {
-        element.style.opacity = 0;
-        element.style.transform = 'translateX(-50%)';
-      }
+      
     });
 
     
@@ -54,7 +62,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="LunarGen.JPG" alt="LunarGen logo">
+        <img src="LunarGen.png" alt="LunarGen logo">
       </div>
       <nav>
         <ul>
@@ -92,7 +100,7 @@
             <h3>Why LunarGen?</h3>
             <p>At LunarGen, we understand that our business relationships are the foundation of our success. Our team of developers is driven by a commitment to building strong relationships with our clients and delivering exceptional results that exceed their expectations. We believe that by working collaboratively with our clients, we can gain a deeper understanding of their unique needs and challenges, and develop solutions that are tailored to their specific requirements.</p>
           </div>
-          <img class="center" src="LunarGen.JPG" alt="Startup image" id="contact">
+          <img class="center" src="LunarGen.png" alt="Startup image" id="contact">
         </div>
       </section>
       <section class="testimonials" >
